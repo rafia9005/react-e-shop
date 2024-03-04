@@ -6,12 +6,18 @@ import {
 } from "react-router-dom";
 import "./index.css";
 // pages
+import NotFound from "./pages/404";
 import HomePages from "./pages/HomePages";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePages/>,
+  },
+  // not found
+  {
+    path: "*",
+    element: <NotFound/>,
   },
 ]);
 
